@@ -1,0 +1,21 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .image {
+    width: 100%;
+    padding-top: 100%; /* 1:1 aspect ratio (square) */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .featured-image {
+    grid-column: span 2; /* Span two columns to make it larger */
+    width: 100%;
+    padding-top: 200%; /* 2:1 aspect ratio (twice as tall) */
+    background-size: cover;
+    background-position: center;
+  }
+  
